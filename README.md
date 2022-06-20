@@ -25,3 +25,4 @@
 [ /q | /quit ] - выход
 [ /h | /help ] - вывести help
 ```
+![image](https://user-images.githubusercontent.com/57139938/174627011-dcfd055d-9fbb-4382-b443-b5c641a753c2.png)
