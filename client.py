@@ -114,9 +114,8 @@ class Chat(urwid.Frame):
             help_output += '[ %s ] - вывести это сообщение\n' % help_cmds
             self.output(help_output, 'normal')
         else:
-            message_to_send = line
             date_now = datetime.now().strftime('%Y.%m.%d %H:%M:%S')
-            message_to_send = f'[{date_now}][ {user_name} ]: {message_to_send}'
+            message_to_send = f'[{date_now}][ {user_name} ]: {line}'
             message_to_send = encrypt(message_to_send.encode(), secret_key)
             client_socket.send(message_to_send)
 
